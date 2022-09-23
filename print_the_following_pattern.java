@@ -8,20 +8,9 @@ class Pattern
         n=sc.nextInt();
         for(i=1;i<=n;i++)
         {
-            for(j=1;j<=n;j++)
+            for(j=1;j<=i;j++)
             {
-                if((j==n)||j==(n-1))
-                {
-                    continue;
-                }
-                else
-                {
-                    System.out.print(j+"");
-                }
-            }
-            for(k=(n-3);k>=1;k--)
-            {
-                System.out.print(k+"");
+                System.out.print(j+"");
             }
             System.out.println();
         }
