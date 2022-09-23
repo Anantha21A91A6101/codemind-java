@@ -6,13 +6,25 @@ class Pattern
         int n,i,j,k;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=n;i>=1;i--)
+        for(i=1;i<=n;i++)
         {
-            for(j=1;j<=i;j++)
+            for(j=1;j<=n;j++)
             {
-                System.out.print((char)(64+i)+" ");
+                if((j==n)||(j==(n-1)))
+                {
+                    continue;
+                }
+                else
+                {
+                    System.out.print(j+"");
+                }
+            }
+            for(k=1;k<=(n-3);k++)
+            {
+                System.out.print(k+"");
             }
             System.out.println();
         }
+        sc.close();
     }
 }
