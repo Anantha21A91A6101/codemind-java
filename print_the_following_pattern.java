@@ -6,20 +6,22 @@ class Search
         int n,j,i;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
+        int k=n-1;
         for(i=0;i<n;i++)
         {
             for(j=0;j<n;j++)
             {
-                if((i==j)||(i+j)==n-1)
+                if((i==j)||j==0 || (i+j)==k)
                 {
-                    System.out.print("x");
+                    System.out.print("* ");
                 }
                 else
                 {
-                    System.out.print("0");
+                    System.out.print("  ");
                 }
             }
             System.out.println();
+            k++;
         }
         sc.close();
     }
