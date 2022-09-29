@@ -1,18 +1,28 @@
 import java.util.Scanner;
-class Pattern
+class Search
 {
     public static void main(String args[])
     {
-        int n,i,j;
+        int n,j,i;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        int t=n;
+        for(i=0;i<n;i++)
         {
-            for(j=i;j<=n;j++)
+            for(j=0;j<n;j++)
             {
-                System.out.print(j+" ");
+                if((i==j)||(i+j)==n-1)
+                {
+                    System.out.print(t+" ");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
+            t--;
         }
+        sc.close();
     }
 }
