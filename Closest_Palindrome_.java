@@ -3,7 +3,7 @@ class Palin
 {
     public static void main(String args[])
     {
-        int n,k,l,m,r,sum=0,p=0,min=0,max=0,c,d,i,j;
+        int n,i,j,l,min=0,max=0,sum=0,s=0,p,k,c,d,r;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
         l=n;
@@ -25,15 +25,15 @@ class Palin
         }
         for(j=(n+1);j>n;j++)
         {
-            m=j;
-            p=0;
-            while(m>0)
+            p=j;
+            s=0;
+            while(p>0)
             {
-                r=m%10;
-                p=p*10+r;
-                m=m/10;
+                r=p%10;
+                s=s*10+r;
+                p=p/10;
             }
-            if(p==j)
+            if(s==j)
             {
                 max=j;
                 break;
