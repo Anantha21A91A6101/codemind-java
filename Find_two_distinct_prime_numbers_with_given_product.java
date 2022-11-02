@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Prime
+class Palin
 {
     static boolean prime(int n)
     {
@@ -30,15 +30,13 @@ class Prime
                 {
                     if(prime(j) && i*j==n)
                     {
-                        y=1;
+                        y++;
                         System.out.print(j+" "+i);
-                        break;
                     }
                 }
             }
             if(y==1)
             {
-                y=1;
                 break;
             }
         }
@@ -48,3 +46,4 @@ class Prime
         }
     }
 }
+        
